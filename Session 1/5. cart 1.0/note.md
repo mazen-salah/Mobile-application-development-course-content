@@ -21,5 +21,3 @@ public class Cart {
 ```
 
 In this example, we have a class called `Cart` that contains an enum called `Item`. The `Item` enum defines three constants: `APPLE`, `BANANA`, and `ORANGE`. Inside the `main` function, we create a variable `item` of type `Item` and assign it the value `Item.APPLE`. We then print the selected item to the console using `System.out.println`.
-
-I hope this explanation helps you understand the concepts of classes, the `main` function, and enums in Java. If you have any further questions, feel free to ask!
