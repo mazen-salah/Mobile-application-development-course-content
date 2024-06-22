@@ -1,1 +1,1 @@
-# Mobile-Development_6-Month
+# Mobile application development
