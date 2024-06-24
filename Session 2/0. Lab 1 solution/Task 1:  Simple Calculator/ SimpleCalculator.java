@@ -6,8 +6,8 @@ public class SimpleCalculator {
         int a, b;
 
         System.out.println("Enter two numbers: ");
-        a = sc.nextInt();
-        b = sc.nextInt();
+        a = sc.nextDouble();
+        b = sc.nextDouble();
 
         System.out.println("Sum: " + (a + b));
         System.out.println("Difference: " + (a - b));
