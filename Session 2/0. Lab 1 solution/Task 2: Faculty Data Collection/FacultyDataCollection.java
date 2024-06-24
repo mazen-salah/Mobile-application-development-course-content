@@ -16,15 +16,15 @@ public class FacultyDataCollection {
         System.out.println("Enter last grade: ");
         lastGrade = sc.next().charAt(0);
         System.out.println("Last grade: " + lastGrade);
-        
+
         System.out.println("Enter last degree: ");
         lastDegree = sc.nextFloat();
         System.out.println("Last degree: " + lastDegree);
-        
+
         System.out.println("Enter number of subjects: ");
         subjectsCount = sc.nextInt();
         System.out.println("Number of subjects: " + subjectsCount);
-        
+
         System.out.println("Enter passed status: ");
         passed = sc.nextBoolean();
         System.out.println("Passed status: " + passed);
