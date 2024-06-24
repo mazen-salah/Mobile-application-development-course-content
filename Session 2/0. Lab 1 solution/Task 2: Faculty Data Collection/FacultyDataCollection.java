@@ -29,5 +29,6 @@ public class FacultyDataCollection {
         passed = sc.nextBoolean();
         System.out.println("Passed status: " + passed);
 
+        sc.close();
     }
 }
