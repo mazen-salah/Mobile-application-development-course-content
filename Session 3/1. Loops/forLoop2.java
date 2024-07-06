@@ -9,11 +9,16 @@ public class forLoop2 {
         System.out.println("Enter the second number: ");
         int num2 = sc.nextInt();
         System.out.println();
-        
+
         if (num2<num1) {
             int temp = num1;
             num1 = num2;
             num2 = temp;
+        }
+        else if (num1 == num2) {
+            System.out.println("Both numbers are equal.");
+            sc.close();
+            return;
         }
         
         for (int i = num1; i <= num2; i++) {
