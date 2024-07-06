@@ -1,3 +1,5 @@
+# Tasks
+
 1. Display numbers from 1 to 10.
 2. Display numbers from 10 up to a specified number entered by the user.
 3. Generate the multiplication table of 3 up to 20.
