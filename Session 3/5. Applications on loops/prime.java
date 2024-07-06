@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class prime {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number: ");
         int n = sc.nextInt();
 
         boolean isPrime = true;
@@ -12,6 +13,7 @@ public class prime {
                 break;
             }
         }
+        System.out.print(n + " is ");
         if (isPrime) {
             System.out.println("Prime");
         } else {
