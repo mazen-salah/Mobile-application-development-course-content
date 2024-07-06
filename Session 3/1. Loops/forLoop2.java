@@ -8,6 +8,7 @@ public class forLoop2 {
         int num1 = sc.nextInt();
         System.out.println("Enter the second number: ");
         int num2 = sc.nextInt();
+        System.out.println();
         
         if (num2<num1) {
             int temp = num1;
