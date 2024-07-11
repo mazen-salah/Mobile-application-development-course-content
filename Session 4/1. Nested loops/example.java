@@ -3,19 +3,50 @@ public class example {
         // year calendar
         for (int i = 1; i <= 12; i++) {
             System.out.println("Month: " + i);
-            if (i == 1 || i == 3 || i == 5 || i == 7 || i == 8 || i == 10 || i == 12) {
-                for (int j = 1; j <= 31; j++) {
-                    System.out.println("Day: " + j);
-                }
-            } else if (i == 4 || i == 6 || i == 9 || i == 11) {
-                for (int j = 1; j <= 30; j++) {
-                    System.out.println("Day: " + j);
-                }
-            } else {
-                for (int j = 1; j <= 28; j++) {
-                    System.out.println("Day: " + j);
-                }
+            int days = 0;
+            switch (i) {
+                case 1:
+                    days = 31;
+                    break;
+                case 2:
+                    days = 28;
+                    break;
+                case 3:
+                    days = 31;
+                    break;
+                case 4:
+                    days = 30;
+                    break;
+                case 5:
+                    days = 31;
+                    break;
+                case 6:
+                    days = 30;
+                    break;
+                case 7:
+                    days = 31;
+                    break;
+                case 8:
+                    days = 31;
+                    break;
+                case 9:
+                    days = 30;
+                    break;
+                case 10:
+                    days = 31;
+                    break;
+                case 11:
+                    days = 30;
+                    break;
+                case 12:
+                    days = 31;
+                    break;
             }
+
+            for (int j = 1; j <= days; j++) {
+                System.out.println("Day: " + j);
+            }
+            
         }
     }
 }
