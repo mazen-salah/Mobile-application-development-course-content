@@ -5,5 +5,7 @@ public class example5 {
         for (int i = 0; i < numbers.length; i++) {
             sum += numbers[i];
         }
+
+        System.out.println("Sum: " + sum);
     }
 }
