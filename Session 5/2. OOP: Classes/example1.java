@@ -1,5 +1,5 @@
 public class example1 {
-    
+
 }
 
 class Employee {
@@ -18,6 +18,13 @@ class Employee {
         System.out.println("Age: " + age);
         System.out.println("Salary: " + salary);
     }
+
+    Public String
+
+    getName() {
+        return name;
+    }
+
 }
 
 class Car {
@@ -43,5 +50,9 @@ class Car {
 
     public void stopEngine() {
         System.out.println("Engine stopped");
+    }
+
+    public String getBrand() {
+        return brand;
     }
 }
