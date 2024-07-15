@@ -19,10 +19,13 @@ class Employee {
         System.out.println("Salary: " + salary);
     }
 
-    Public String
-
-    getName() {
+    Public String getName() {
         return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+        System.out.println("Name updated to" + name);
     }
 
 }
