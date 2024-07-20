@@ -45,4 +45,4 @@ In this example, the `Animal` class is the superclass, and the `Dog` class is th
 
 In the `main` method, we create an instance of the `Dog` class and call both the inherited `eat()` method and the `bark()` method, which is specific to the `Dog` class.
 
-Inheritance allows for code reuse, promotes code organization, and enables the creation of class hierarchies. It is an essential concept in object-oriented programming and provides a powerful mechanism for creating relationships between classes.
+Inheritance allows for code reuse, promotes code organization, and enables the creation of class hierarchies. It is an essential concept in object-oriented programming and provides a powerful mechanism for creating relationships between classes
