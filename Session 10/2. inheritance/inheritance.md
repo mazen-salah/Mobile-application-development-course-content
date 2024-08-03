@@ -26,8 +26,8 @@ fun main() {
 }
 ```
 
-In this example, we have a superclass called `Animal` with a property `name` and a function `eat()`. The `Dog` class is a subclass of `Animal` and inherits the `name` property and `eat()` function. Additionally, the `Dog` class defines its own function `bark()`. 
+In this example, we have a superclass called `Animal` with a property `name` and a function `eat()`. The `Dog` class is a subclass of `Animal` and inherits the `name` property and `eat()` function. Additionally, the `Dog` class defines its own function `bark()`
 
 In the `main()` function, we create an instance of the `Dog` class called `dog`. We can call both the inherited `eat()` function and the `bark()` function on the `dog` object.
 
-By using inheritance, we can create a hierarchy of classes that share common properties and behaviors, while allowing each subclass to have its own unique characteristics.
+By using inheritance, we can create a hierarchy of classes that share common properties and behaviors, while allowing each subclass to have its own unique characteristics
