@@ -4,11 +4,15 @@ hide:
   - toc
 ---
 
+<p align="center" markdown>
+  ![Mobile App Development Course](assets/hero.svg){ width=100% }
+</p>
+
 # Mobile App Development Course
 
 **A complete, beginner-friendly course** that takes you from zero programming experience to shipping production-quality Android and Flutter apps.
 
-This course was authored by [Mazen Tamer Salah](https://github.com/mazen-salah) — Founder of [SummationWorks](https://summationworks.com), Technical Team Lead at UTD Software and Clean Basket — based on years of teaching and shipping real apps in production.
+This course was authored by [Mazen Tamer Salah](https://github.com/mazen-salah) — Founder of [SummationWorks](https://summationworks.com), Technical Team Lead at [UTD Software](https://utdsoftware.com) and [Clean Basket](https://clean-basket.com) — based on years of teaching and shipping real apps in production.
 
 [Get started →](getting-started.md){ .md-button .md-button--primary }
 [Browse modules](#course-modules){ .md-button }
@@ -34,6 +38,7 @@ No prior programming experience required.
 <div class="module-grid" markdown>
 
 <div class="module-card" markdown>
+![](assets/module-java.svg){ .module-icon width=56 }
 ### 1. Java Foundations
 Learn programming from scratch using Java. Variables, control flow, methods, arrays, strings, and the full OOP toolkit.
 <p class="lesson-count">18 lessons · 4 labs</p>
@@ -41,6 +46,7 @@ Learn programming from scratch using Java. Variables, control flow, methods, arr
 </div>
 
 <div class="module-card" markdown>
+![](assets/module-kotlin.svg){ .module-icon width=56 }
 ### 2. Kotlin
 Modern, expressive language used in every contemporary Android codebase. Null safety, data classes, lambdas.
 <p class="lesson-count">12 lessons · 2 labs</p>
@@ -48,6 +54,7 @@ Modern, expressive language used in every contemporary Android codebase. Null sa
 </div>
 
 <div class="module-card" markdown>
+![](assets/module-android.svg){ .module-icon width=56 }
 ### 3. Android Native
 Build real Android apps. Activities, layouts, RecyclerView, ViewModel, Room, Retrofit, and Jetpack Compose.
 <p class="lesson-count">13 lessons · 3 labs</p>
@@ -55,6 +62,7 @@ Build real Android apps. Activities, layouts, RecyclerView, ViewModel, Room, Ret
 </div>
 
 <div class="module-card" markdown>
+![](assets/module-flutter.svg){ .module-icon width=56 }
 ### 4. Flutter
 One codebase, iOS + Android + web. Widgets, navigation, BLoC, REST, Firebase, testing, publishing.
 <p class="lesson-count">13 lessons · 3 labs</p>
@@ -62,6 +70,7 @@ One codebase, iOS + Android + web. Widgets, navigation, BLoC, REST, Firebase, te
 </div>
 
 <div class="module-card" markdown>
+![](assets/module-capstone.svg){ .module-icon width=56 }
 ### 5. Capstone
 Choose Android Native or Flutter — design, build, and ship a real app following the supplied rubric.
 <p class="lesson-count">2 project briefs</p>

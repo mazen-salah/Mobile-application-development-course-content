@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" role="img" aria-label="Mobile App Development Course">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0B1A3E"/>
+      <stop offset="1" stop-color="#1a3265"/>
+    </linearGradient>
+    <linearGradient id="phoneScreen" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#161b22"/>
+    </linearGradient>
+    <linearGradient id="codeAccent" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#00D4FF"/>
+      <stop offset="1" stop-color="#0099B8"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background with rounded corners -->
+  <rect width="1200" height="480" fill="url(#bg)" rx="20"/>
+
+  <!-- Decorative ambient circles -->
+  <circle cx="100" cy="80" r="120" fill="#00D4FF" opacity="0.06"/>
+  <circle cx="1080" cy="380" r="160" fill="#00D4FF" opacity="0.04"/>
+  <circle cx="200" cy="420" r="50" fill="#00D4FF" opacity="0.08"/>
+  <circle cx="950" cy="100" r="40" fill="#00D4FF" opacity="0.07"/>
+
+  <!-- Floating widget tree nodes (decorative, left side) -->
+  <g transform="translate(80, 200)" opacity="0.7">
+    <line x1="60" y1="20" x2="20" y2="80" stroke="#00D4FF" stroke-width="1.5" opacity="0.5"/>
+    <line x1="60" y1="20" x2="100" y2="80" stroke="#00D4FF" stroke-width="1.5" opacity="0.5"/>
+    <line x1="20" y1="80" x2="0" y2="140" stroke="#00D4FF" stroke-width="1.5" opacity="0.5"/>
+    <line x1="20" y1="80" x2="40" y2="140" stroke="#00D4FF" stroke-width="1.5" opacity="0.5"/>
+    <line x1="100" y1="80" x2="100" y2="140" stroke="#00D4FF" stroke-width="1.5" opacity="0.5"/>
+    <circle cx="60" cy="20" r="8" fill="#00D4FF"/>
+    <circle cx="20" cy="80" r="6" fill="#00D4FF" opacity="0.8"/>
+    <circle cx="100" cy="80" r="6" fill="#00D4FF" opacity="0.8"/>
+    <circle cx="0" cy="140" r="5" fill="#00D4FF" opacity="0.6"/>
+    <circle cx="40" cy="140" r="5" fill="#00D4FF" opacity="0.6"/>
+    <circle cx="100" cy="140" r="5" fill="#00D4FF" opacity="0.6"/>
+  </g>
+
+  <!-- Phone frame (center-right) -->
+  <g transform="translate(820, 70)">
+    <!-- Outer frame -->
+    <rect x="0" y="0" width="240" height="380" rx="32" fill="#0d1117" stroke="#00D4FF" stroke-width="2" filter="url(#glow)"/>
+    <!-- Inner screen -->
+    <rect x="12" y="48" width="216" height="280" rx="6" fill="url(#phoneScreen)"/>
+    <!-- Notch -->
+    <rect x="90" y="14" width="60" height="14" rx="7" fill="#0B1A3E"/>
+    <!-- Home indicator -->
+    <rect x="100" y="350" width="40" height="4" rx="2" fill="#30363d"/>
+
+    <!-- Screen content: app bar -->
+    <rect x="22" y="58" width="196" height="32" rx="4" fill="#0B1A3E"/>
+    <rect x="32" y="70" width="80" height="8" rx="2" fill="#00D4FF"/>
+
+    <!-- Cards -->
+    <rect x="22" y="102" width="196" height="48" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <circle cx="38" cy="126" r="9" fill="#00D4FF" opacity="0.7"/>
+    <rect x="56" y="114" width="120" height="6" rx="2" fill="#e6edf3"/>
+    <rect x="56" y="128" width="80" height="5" rx="2" fill="#7d8590"/>
+
+    <rect x="22" y="158" width="196" height="48" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <circle cx="38" cy="182" r="9" fill="#00D4FF" opacity="0.5"/>
+    <rect x="56" y="170" width="100" height="6" rx="2" fill="#e6edf3"/>
+    <rect x="56" y="184" width="90" height="5" rx="2" fill="#7d8590"/>
+
+    <rect x="22" y="214" width="196" height="48" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <circle cx="38" cy="238" r="9" fill="#00D4FF" opacity="0.3"/>
+    <rect x="56" y="226" width="140" height="6" rx="2" fill="#e6edf3"/>
+    <rect x="56" y="240" width="70" height="5" rx="2" fill="#7d8590"/>
+
+    <!-- FAB -->
+    <circle cx="200" cy="300" r="18" fill="#00D4FF"/>
+    <line x1="200" y1="293" x2="200" y2="307" stroke="#0B1A3E" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="193" y1="300" x2="207" y2="300" stroke="#0B1A3E" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Code snippet (left of phone) -->
+  <g transform="translate(280, 140)" font-family="JetBrains Mono, monospace" font-size="14">
+    <rect x="0" y="0" width="380" height="220" rx="10" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+    <!-- Window dots -->
+    <circle cx="18" cy="18" r="5" fill="#ff5f57"/>
+    <circle cx="34" cy="18" r="5" fill="#febc2e"/>
+    <circle cx="50" cy="18" r="5" fill="#28c840"/>
+
+    <!-- Code lines -->
+    <text x="20" y="60" fill="#ff7b72">class</text>
+    <text x="68" y="60" fill="#79c0ff">HomeScreen</text>
+    <text x="172" y="60" fill="#e6edf3">extends</text>
+    <text x="248" y="60" fill="#79c0ff">StatelessWidget</text>
+    <text x="384" y="60" fill="#e6edf3">{</text>
+
+    <text x="36" y="86" fill="#ff7b72">Widget</text>
+    <text x="100" y="86" fill="#d2a8ff">build</text>
+    <text x="140" y="86" fill="#e6edf3">(ctx) =&gt;</text>
+
+    <text x="52" y="112" fill="#d2a8ff">Scaffold</text>
+    <text x="124" y="112" fill="#e6edf3">(</text>
+    <text x="68" y="138" fill="#7ee787">appBar:</text>
+    <text x="140" y="138" fill="#d2a8ff">AppBar</text>
+    <text x="68" y="164" fill="#7ee787">body:</text>
+    <text x="120" y="164" fill="#d2a8ff">Center</text>
+    <text x="172" y="164" fill="#e6edf3">(</text>
+    <text x="84" y="190" fill="#d2a8ff">Text</text>
+    <text x="122" y="190" fill="#a5d6ff">'Hello, Course!'</text>
+    <text x="52" y="216" fill="#e6edf3">);</text>
+  </g>
+
+  <!-- Title text (top left) -->
+  <g transform="translate(60, 100)">
+    <text fill="#ffffff" font-family="Inter, sans-serif" font-size="38" font-weight="700">Mobile App</text>
+    <text fill="#ffffff" font-family="Inter, sans-serif" font-size="38" font-weight="700" y="44">Development</text>
+    <text fill="url(#codeAccent)" font-family="Inter, sans-serif" font-size="38" font-weight="700" y="88">Course</text>
+    <text fill="#7d8590" font-family="Inter, sans-serif" font-size="14" y="120">Java · Kotlin · Android · Flutter</text>
+  </g>
+</svg>

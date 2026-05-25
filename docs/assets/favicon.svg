@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="favBg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0B1A3E"/>
+      <stop offset="1" stop-color="#1a3265"/>
+    </linearGradient>
+    <linearGradient id="favPhone" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#00D4FF"/>
+      <stop offset="1" stop-color="#0099CC"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="12" fill="url(#favBg)"/>
+  <!-- Phone outline -->
+  <rect x="20" y="10" width="24" height="44" rx="5" fill="none" stroke="url(#favPhone)" stroke-width="2.5"/>
+  <!-- Screen content (3 horizontal bars) -->
+  <rect x="24" y="18" width="16" height="3" rx="1" fill="#00D4FF"/>
+  <rect x="24" y="26" width="16" height="2" rx="1" fill="#00D4FF" opacity="0.7"/>
+  <rect x="24" y="32" width="12" height="2" rx="1" fill="#00D4FF" opacity="0.5"/>
+  <rect x="24" y="38" width="14" height="2" rx="1" fill="#00D4FF" opacity="0.7"/>
+  <!-- Home indicator -->
+  <rect x="28" y="48" width="8" height="2" rx="1" fill="#00D4FF" opacity="0.6"/>
+</svg>

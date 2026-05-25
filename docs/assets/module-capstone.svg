@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="capG" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#FFC107"/>
+      <stop offset="1" stop-color="#FF9100"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="12" fill="url(#capG)" opacity="0.15"/>
+  <!-- Trophy -->
+  <path d="M20 16 h24 v8 c0 6 -4 12 -10 13 v6 h4 v3 h-12 v-3 h4 v-6 c-6 -1 -10 -7 -10 -13 v-8z"
+        fill="url(#capG)"/>
+  <!-- Trophy handles -->
+  <path d="M20 18 c-4 0 -4 8 0 8" fill="none" stroke="url(#capG)" stroke-width="2"/>
+  <path d="M44 18 c4 0 4 8 0 8" fill="none" stroke="url(#capG)" stroke-width="2"/>
+  <!-- Base -->
+  <rect x="22" y="48" width="20" height="3" rx="1" fill="url(#capG)"/>
+</svg>
