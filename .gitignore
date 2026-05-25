@@ -1,0 +1,24 @@
+# Build artifacts
+_site/
+site/
+.cache/
+__pycache__/
+*.pyc
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Node (in case someone adds JS tooling later)
+node_modules/
+
+# OS junk
+*.log
