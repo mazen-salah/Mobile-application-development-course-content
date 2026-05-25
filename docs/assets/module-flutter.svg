@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="flutG" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#54C5F8"/>
+      <stop offset="1" stop-color="#0175C2"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="12" fill="url(#flutG)" opacity="0.15"/>
+  <!-- Flutter F shape (stylized) -->
+  <polygon points="40,10 22,28 32,28 22,38 32,38 22,48 40,48 30,38 38,30 30,30"
+           fill="url(#flutG)"/>
+</svg>

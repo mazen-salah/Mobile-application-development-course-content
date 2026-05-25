@@ -12,6 +12,8 @@ theme:
   name: material
   language: en
   custom_dir: overrides
+  logo: assets/logo.svg
+  favicon: assets/favicon.svg
   features:
     - navigation.tabs
     - navigation.tabs.sticky
@@ -57,6 +59,10 @@ theme:
 
 extra_css:
   - stylesheets/extra.css
+
+extra_javascript:
+  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
+  - javascripts/mermaid-init.js
 
 extra:
   social:

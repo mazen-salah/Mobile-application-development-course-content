@@ -1,84 +1,370 @@
-/* SummationWorks brand: cyan #00D4FF, navy #0B1A3E */
+/* ============================================================
+   SummationWorks brand: cyan #00D4FF, navy #0B1A3E
+   Goal: strong contrast, clear hierarchy, dark mode that feels
+   like GitHub-dark not "everything is navy."
+   ============================================================ */
+
+/* ---------- LIGHT MODE ---------- */
 :root {
   --md-primary-fg-color: #0B1A3E;
   --md-primary-fg-color--light: #1a3265;
   --md-primary-fg-color--dark: #050d24;
-  --md-accent-fg-color: #00D4FF;
-  --md-accent-fg-color--transparent: rgba(0, 212, 255, 0.1);
-}
+  --md-primary-bg-color: #ffffff;
+  --md-primary-bg-color--light: rgba(255, 255, 255, 0.7);
 
-[data-md-color-scheme="slate"] {
-  --md-primary-fg-color: #0B1A3E;
-  --md-accent-fg-color: #00D4FF;
-  --md-typeset-a-color: #00D4FF;
-}
+  /* Accent: darker cyan for AA contrast on white */
+  --md-accent-fg-color: #0099B8;
+  --md-accent-fg-color--transparent: rgba(0, 153, 184, 0.1);
 
-[data-md-color-scheme="default"] {
+  /* Body text — proper contrast */
+  --md-default-fg-color: rgba(0, 0, 0, 0.87);
+  --md-default-fg-color--light: rgba(0, 0, 0, 0.65);
+  --md-default-fg-color--lighter: rgba(0, 0, 0, 0.32);
+
   --md-typeset-a-color: #0B1A3E;
 }
 
+/* ---------- DARK MODE (Material's "slate") ---------- */
+[data-md-color-scheme="slate"] {
+  /* GitHub-dark-style backgrounds — NOT the same navy as the header */
+  --md-default-bg-color: #0d1117;
+  --md-default-bg-color--light: #161b22;
+  --md-default-bg-color--lighter: #21262d;
+  --md-default-bg-color--lightest: #30363d;
+
+  /* Card / surface */
+  --md-code-bg-color: #161b22;
+  --md-code-fg-color: #e6edf3;
+
+  /* High-contrast text */
+  --md-default-fg-color: rgba(255, 255, 255, 0.92);
+  --md-default-fg-color--light: rgba(255, 255, 255, 0.78);
+  --md-default-fg-color--lighter: rgba(255, 255, 255, 0.55);
+  --md-default-fg-color--lightest: rgba(255, 255, 255, 0.20);
+
+  /* Header stays branded navy */
+  --md-primary-fg-color: #0B1A3E;
+  --md-primary-bg-color: #ffffff;
+
+  /* Accent: full-strength cyan pops nicely on dark */
+  --md-accent-fg-color: #00D4FF;
+  --md-accent-fg-color--transparent: rgba(0, 212, 255, 0.15);
+
+  /* Links — bright cyan */
+  --md-typeset-a-color: #2DD4FF;
+
+  /* Admonition tweaks for dark */
+  --md-admonition-bg-color: #161b22;
+  --md-admonition-fg-color: #e6edf3;
+}
+
+/* ---------- HEADER ---------- */
 .md-header {
   background-color: var(--md-primary-fg-color);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(0, 212, 255, 0.25);
 }
 
 .md-tabs {
   background-color: var(--md-primary-fg-color);
+  border-bottom: 1px solid rgba(0, 212, 255, 0.15);
 }
 
-/* Module overview cards on home page */
+[data-md-color-scheme="slate"] .md-tabs__link--active,
+[data-md-color-scheme="slate"] .md-tabs__link:hover {
+  color: #00D4FF;
+}
+
+/* ---------- TYPOGRAPHY ---------- */
+[data-md-color-scheme="slate"] .md-typeset h1 {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h2 {
+  color: #ffffff;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(0, 212, 255, 0.2);
+  padding-bottom: 0.4rem;
+  margin-top: 2.5rem;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h3 {
+  color: #e6edf3;
+  font-weight: 600;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h4 {
+  color: #e6edf3;
+}
+
+[data-md-color-scheme="default"] .md-typeset h2 {
+  border-bottom: 1px solid rgba(11, 26, 62, 0.12);
+  padding-bottom: 0.4rem;
+  margin-top: 2.5rem;
+}
+
+/* ---------- BUTTONS ---------- */
+/* Primary button — filled cyan */
+.md-typeset .md-button--primary {
+  background-color: #00D4FF;
+  color: #0B1A3E;
+  border-color: #00D4FF;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.md-typeset .md-button--primary:hover,
+.md-typeset .md-button--primary:focus {
+  background-color: #33DDFF;
+  border-color: #33DDFF;
+  color: #0B1A3E;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 212, 255, 0.4);
+}
+
+/* Secondary button — outlined */
+.md-typeset .md-button {
+  border: 2px solid var(--md-accent-fg-color);
+  color: var(--md-accent-fg-color);
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .md-button {
+  border-color: #00D4FF;
+  color: #00D4FF;
+  background-color: transparent;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .md-button:hover,
+[data-md-color-scheme="slate"] .md-typeset .md-button:focus {
+  background-color: rgba(0, 212, 255, 0.12);
+  color: #00D4FF;
+  border-color: #00D4FF;
+}
+
+/* ---------- MODULE CARDS ---------- */
 .module-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1rem;
-  margin: 1.5rem 0;
+  gap: 1.25rem;
+  margin: 1.5rem 0 2rem;
 }
 
 .module-card {
   border: 1px solid var(--md-default-fg-color--lightest);
-  border-radius: 0.5rem;
-  padding: 1.25rem;
-  transition: all 0.2s ease;
-  background: var(--md-default-bg-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  background: var(--md-default-bg-color--light);
+  transition: all 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+[data-md-color-scheme="slate"] .module-card {
+  background: #161b22;
+  border-color: #30363d;
 }
 
 .module-card:hover {
-  border-color: var(--md-accent-fg-color);
-  box-shadow: 0 4px 12px rgba(0, 212, 255, 0.15);
-  transform: translateY(-2px);
+  border-color: #00D4FF;
+  box-shadow: 0 6px 24px rgba(0, 212, 255, 0.18);
+  transform: translateY(-3px);
 }
 
 .module-card h3 {
-  margin-top: 0;
-  color: var(--md-accent-fg-color);
+  margin-top: 0 !important;
+  margin-bottom: 0.5rem !important;
+  color: #00D4FF !important;
+  border: none !important;
+  padding: 0 !important;
+  font-size: 1.15rem;
+}
+
+[data-md-color-scheme="default"] .module-card h3 {
+  color: #0B1A3E !important;
+}
+
+.module-card p {
+  flex: 1;
+  margin: 0.5rem 0;
 }
 
 .module-card .lesson-count {
-  font-size: 0.85em;
-  color: var(--md-default-fg-color--light);
+  font-size: 0.82em;
+  color: var(--md-default-fg-color--lighter);
+  margin: 0.5rem 0 1rem;
 }
 
-/* Code block tweaks */
+.module-card a:not(.md-button) {
+  display: inline-block;
+  margin-top: auto;
+  font-weight: 600;
+  color: var(--md-accent-fg-color);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.module-card a:not(.md-button):hover {
+  border-bottom-color: var(--md-accent-fg-color);
+}
+
+/* ---------- CODE BLOCKS ---------- */
 .md-typeset code {
   border-radius: 4px;
+  padding: 0.15em 0.4em;
 }
 
-/* Mermaid diagrams */
+[data-md-color-scheme="slate"] .md-typeset :not(pre) > code {
+  background-color: rgba(0, 212, 255, 0.12);
+  color: #7FE5FF;
+}
+
+[data-md-color-scheme="slate"] .md-typeset pre > code {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+}
+
+/* ---------- TABLES ---------- */
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
+  background-color: #21262d;
+  color: #ffffff;
+  border-bottom: 1px solid #30363d;
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) td {
+  border-color: #30363d;
+}
+
+/* ---------- ADMONITIONS ---------- */
+[data-md-color-scheme="slate"] .md-typeset .admonition,
+[data-md-color-scheme="slate"] .md-typeset details {
+  background-color: #161b22;
+  border-left-width: 4px;
+}
+
+/* ---------- MERMAID DIAGRAMS ---------- */
 .mermaid {
   text-align: center;
   margin: 1.5rem 0;
+  background: transparent !important;
 }
 
-/* Lesson navigation hint */
+[data-md-color-scheme="slate"] .mermaid {
+  background: #161b22 !important;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+/* ---------- LINKS ---------- */
+.md-typeset a {
+  font-weight: 500;
+  transition: color 0.15s ease;
+}
+
+.md-typeset a:hover {
+  color: var(--md-accent-fg-color);
+}
+
+/* ---------- NAV ---------- */
+[data-md-color-scheme="slate"] .md-nav__item .md-nav__link--active,
+[data-md-color-scheme="slate"] .md-nav__item .md-nav__link--active code {
+  color: #00D4FF;
+}
+
+[data-md-color-scheme="slate"] .md-nav__link:hover {
+  color: #00D4FF;
+}
+
+/* ---------- SEARCH ---------- */
+[data-md-color-scheme="slate"] .md-search__input {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+[data-md-color-scheme="slate"] .md-search__input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ---------- FOOTER ---------- */
+.md-footer {
+  background-color: #050d24;
+}
+
+.md-footer-meta {
+  background-color: #020611;
+}
+
+/* ---------- LESSON META ---------- */
 .lesson-meta {
   display: flex;
   gap: 1rem;
   font-size: 0.85em;
-  color: var(--md-default-fg-color--light);
+  color: var(--md-default-fg-color--lighter);
   margin-bottom: 1.5rem;
   padding-bottom: 0.75rem;
   border-bottom: 1px solid var(--md-default-fg-color--lightest);
 }
 
-.lesson-meta span::before {
-  margin-right: 0.25rem;
+/* ---------- "What you'll learn" emphasis ---------- */
+.md-typeset h2 + ul li strong,
+.md-typeset h2 + ol li strong {
+  color: var(--md-accent-fg-color);
+}
+
+/* ---------- HOME PAGE HERO ---------- */
+.md-typeset h1:first-of-type {
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 1rem;
+}
+
+/* Hide the auto-generated H1 on the home page since the hero SVG includes the title */
+.md-content__inner > p:first-of-type:has(img[src*="hero.svg"]) + h1 {
+  display: none;
+}
+
+/* Module icons */
+.module-icon {
+  width: 56px;
+  height: 56px;
+  margin-bottom: 0.75rem;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h1:first-of-type {
+  background: linear-gradient(135deg, #ffffff 0%, #00D4FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ---------- BLOCKQUOTES ---------- */
+[data-md-color-scheme="slate"] .md-typeset blockquote {
+  color: var(--md-default-fg-color--light);
+  border-left: 4px solid #00D4FF;
+  background: rgba(0, 212, 255, 0.05);
+  padding: 0.75rem 1rem;
+  border-radius: 0 4px 4px 0;
+}
+
+[data-md-color-scheme="default"] .md-typeset blockquote {
+  color: var(--md-default-fg-color--light);
+  border-left: 4px solid #0B1A3E;
+  background: rgba(11, 26, 62, 0.04);
+  padding: 0.75rem 1rem;
+  border-radius: 0 4px 4px 0;
+}
+
+/* ---------- HORIZONTAL RULES ---------- */
+[data-md-color-scheme="slate"] .md-typeset hr {
+  border-bottom-color: #30363d;
 }
