@@ -22,3 +22,6 @@ node_modules/
 
 # OS junk
 *.log
+
+# AI image gen intermediates (we only commit the approved canonical names)
+docs/assets/ai/

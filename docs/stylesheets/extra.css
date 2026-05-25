@@ -328,16 +328,33 @@
   margin-bottom: 1rem;
 }
 
-/* Hide the auto-generated H1 on the home page since the hero SVG includes the title */
-.md-content__inner > p:first-of-type:has(img[src*="hero.svg"]) + h1 {
-  display: none;
+/* Hero image styling */
+.hero-image {
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 212, 255, 0.15);
+  margin-bottom: 1.5rem;
+  display: block;
 }
 
-/* Module icons */
+[data-md-color-scheme="slate"] .hero-image {
+  box-shadow: 0 10px 40px rgba(0, 212, 255, 0.25);
+}
+
+/* Module icons (legacy small SVG) */
 .module-icon {
   width: 56px;
   height: 56px;
   margin-bottom: 0.75rem;
+}
+
+/* Module banner images (AI-generated) */
+.module-banner {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  display: block;
 }
 
 [data-md-color-scheme="slate"] .md-typeset h1:first-of-type {

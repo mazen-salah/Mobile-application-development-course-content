@@ -1,8 +1,12 @@
 # Module 5 — Capstone
 
+<p align="center" markdown>
+  ![TaskMate capstone](../assets/taskmate.png){ .hero-image width=100% }
+</p>
+
 You've made it. Now you build the real thing.
 
-The capstone is **one app, shipped to the Play Store** (or TestFlight if you have a Mac and Apple Developer account). You can choose either stack.
+The capstone is **one app, shipped to the Play Store** (or TestFlight if you have a Mac and Apple Developer account). You can choose either stack. Both tracks build **TaskMate** — a task management app with social features.
 
 ## Pick your track
 
