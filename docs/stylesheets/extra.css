@@ -1,0 +1,84 @@
+/* SummationWorks brand: cyan #00D4FF, navy #0B1A3E */
+:root {
+  --md-primary-fg-color: #0B1A3E;
+  --md-primary-fg-color--light: #1a3265;
+  --md-primary-fg-color--dark: #050d24;
+  --md-accent-fg-color: #00D4FF;
+  --md-accent-fg-color--transparent: rgba(0, 212, 255, 0.1);
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #0B1A3E;
+  --md-accent-fg-color: #00D4FF;
+  --md-typeset-a-color: #00D4FF;
+}
+
+[data-md-color-scheme="default"] {
+  --md-typeset-a-color: #0B1A3E;
+}
+
+.md-header {
+  background-color: var(--md-primary-fg-color);
+}
+
+.md-tabs {
+  background-color: var(--md-primary-fg-color);
+}
+
+/* Module overview cards on home page */
+.module-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.module-card {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  transition: all 0.2s ease;
+  background: var(--md-default-bg-color);
+}
+
+.module-card:hover {
+  border-color: var(--md-accent-fg-color);
+  box-shadow: 0 4px 12px rgba(0, 212, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.module-card h3 {
+  margin-top: 0;
+  color: var(--md-accent-fg-color);
+}
+
+.module-card .lesson-count {
+  font-size: 0.85em;
+  color: var(--md-default-fg-color--light);
+}
+
+/* Code block tweaks */
+.md-typeset code {
+  border-radius: 4px;
+}
+
+/* Mermaid diagrams */
+.mermaid {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+/* Lesson navigation hint */
+.lesson-meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.85em;
+  color: var(--md-default-fg-color--light);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.lesson-meta span::before {
+  margin-right: 0.25rem;
+}

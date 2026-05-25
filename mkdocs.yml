@@ -1,0 +1,187 @@
+site_name: Mobile App Development Course
+site_url: https://mazen-salah.github.io/Mobile-application-development-course-content/
+site_description: A complete beginner-friendly course on mobile app development — Java + Kotlin foundations, Android Native (XML + Jetpack Compose), and Flutter.
+site_author: Mazen Tamer Salah
+copyright: Copyright &copy; 2024–2026 Mazen Tamer Salah · SummationWorks
+
+repo_url: https://github.com/mazen-salah/Mobile-application-development-course-content
+repo_name: mazen-salah/Mobile-application-development-course-content
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: en
+  custom_dir: overrides
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - navigation.indexes
+    - navigation.footer
+    - toc.follow
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - search.suggest
+    - search.highlight
+    - search.share
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+  font:
+    text: Inter
+    code: JetBrains Mono
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/mazen-salah
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/mazen3056
+    - icon: fontawesome/solid/globe
+      link: https://summationworks.com
+  generator: false
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Module 1 — Java Foundations:
+      - 01-java-foundations/index.md
+      - Introduction: 01-java-foundations/01-introduction.md
+      - Output & Hello World: 01-java-foundations/02-output.md
+      - Comments: 01-java-foundations/03-comments.md
+      - Naming Conventions: 01-java-foundations/04-naming.md
+      - Data Types: 01-java-foundations/05-data-types.md
+      - Operators: 01-java-foundations/06-operators.md
+      - Conditionals: 01-java-foundations/07-conditionals.md
+      - Loops: 01-java-foundations/08-loops.md
+      - Arrays: 01-java-foundations/09-arrays.md
+      - Strings: 01-java-foundations/10-strings.md
+      - Methods: 01-java-foundations/11-methods.md
+      - OOP — Classes & Objects: 01-java-foundations/12-oop-classes.md
+      - OOP — Inheritance: 01-java-foundations/13-oop-inheritance.md
+      - OOP — Polymorphism: 01-java-foundations/14-oop-polymorphism.md
+      - OOP — Abstraction: 01-java-foundations/15-oop-abstraction.md
+      - Encapsulation: 01-java-foundations/16-encapsulation.md
+      - Collections: 01-java-foundations/17-collections.md
+      - Exceptions: 01-java-foundations/18-exceptions.md
+      - Labs: 01-java-foundations/labs.md
+  - Module 2 — Kotlin:
+      - 02-kotlin/index.md
+      - Getting Started with Kotlin: 02-kotlin/01-getting-started.md
+      - Variables & Types: 02-kotlin/02-variables-types.md
+      - Null Safety: 02-kotlin/03-null-safety.md
+      - Functions: 02-kotlin/04-functions.md
+      - Control Flow: 02-kotlin/05-control-flow.md
+      - Classes & Objects: 02-kotlin/06-classes.md
+      - Setters & Getters: 02-kotlin/07-setters-getters.md
+      - Inheritance: 02-kotlin/08-inheritance.md
+      - Interfaces: 02-kotlin/09-interfaces.md
+      - Abstract Classes: 02-kotlin/10-abstract-classes.md
+      - Data Classes: 02-kotlin/11-data-classes.md
+      - Lambdas & Collections: 02-kotlin/12-lambdas-collections.md
+      - Labs: 02-kotlin/labs.md
+  - Module 3 — Android Native:
+      - 03-android-native/index.md
+      - Android Studio Setup: 03-android-native/01-android-studio-setup.md
+      - Anatomy of an Android App: 03-android-native/02-anatomy.md
+      - Activity Lifecycle: 03-android-native/03-activity-lifecycle.md
+      - Layouts & Views (XML): 03-android-native/04-layouts-views.md
+      - Intents: 03-android-native/05-intents.md
+      - RecyclerView: 03-android-native/06-recyclerview.md
+      - Fragments: 03-android-native/07-fragments.md
+      - Navigation Component: 03-android-native/08-navigation-component.md
+      - ViewModel & LiveData: 03-android-native/09-viewmodel-livedata.md
+      - Room Database: 03-android-native/10-room-database.md
+      - Retrofit Networking: 03-android-native/11-retrofit-networking.md
+      - Material Design: 03-android-native/12-material-design.md
+      - Jetpack Compose Intro: 03-android-native/13-jetpack-compose.md
+      - Labs: 03-android-native/labs.md
+  - Module 4 — Flutter:
+      - 04-flutter/index.md
+      - Flutter Setup: 04-flutter/01-setup.md
+      - Dart Essentials: 04-flutter/02-dart-essentials.md
+      - Widgets Intro: 04-flutter/03-widgets-intro.md
+      - Layout — Row, Column, Stack: 04-flutter/04-layout.md
+      - Stateful Widgets: 04-flutter/05-stateful-widgets.md
+      - Navigation: 04-flutter/06-navigation.md
+      - State Management (setState → Provider): 04-flutter/07-state-management.md
+      - BLoC Pattern: 04-flutter/08-bloc-pattern.md
+      - HTTP & REST: 04-flutter/09-http-rest.md
+      - Local Persistence: 04-flutter/10-persistence.md
+      - Firebase Intro: 04-flutter/11-firebase.md
+      - Testing: 04-flutter/12-testing.md
+      - Publishing to Stores: 04-flutter/13-publishing.md
+      - Labs: 04-flutter/labs.md
+  - Module 5 — Capstone:
+      - 05-capstone/index.md
+      - Android Native Project: 05-capstone/android-native-project.md
+      - Flutter Project: 05-capstone/flutter-project.md
+      - Grading Rubric: 05-capstone/rubric.md
+  - Diagrams: diagrams.md
